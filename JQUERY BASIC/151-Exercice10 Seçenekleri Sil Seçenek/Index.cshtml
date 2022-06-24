@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+        <title></title>
+        <style>
+        
+        </style>
+       
+    </head>
+    <body>
+
+        <select id="myColor">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+        </select>
+        <input type="button" value="Tüm seçenekleri sil" onclick="Remove_options()" />
+
+        <script>
+            function Remove_options() {
+                $('#myColor').empty().append('<option selected="selected" value="black">Black</option>')
+            }
+
+        </script>
+
+    </body>
+    </html>

@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+        <title></title>
+        <style>
+            textarea{
+                display:block;
+            }
+        </style>
+       
+    </head>
+    <body>
+
+        <label>Maksimum 15 karakter</label>
+        <textarea maxlength="15" id="textaream"></textarea>
+        <span id="kalankarakter">15</span> Karakter kaldı
+
+        <script>
+            var maxLength = 15;
+            $('#textaream').keyup(function () {
+                var karaktersayisi = maxLength - $(this).val().length;
+                $('#kalankarakter').text(karaktersayisi);
+            });
+        </script>
+    </body>
+    </html>

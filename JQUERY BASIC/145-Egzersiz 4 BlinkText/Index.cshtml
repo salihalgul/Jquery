@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+        <p>Benim adım <span class="blink">Can</span> Boz</p>
+
+        <script>
+            function blink_text() {
+                $('.blink').fadeOut(500);
+                $('.blink').fadeIn(500);
+            }
+            //setInterval(blink_text, 1000);
+            setInterval(blink_text, 3000);
+        </script>
+        
+    </body>
+    </html>

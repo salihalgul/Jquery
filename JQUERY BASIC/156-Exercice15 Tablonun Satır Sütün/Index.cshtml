@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+        <title></title>
+        <style>
+
+        </style>
+       
+    </head>
+    <body>
+
+        <table id="table1">
+            <tr>
+                <th>Tools</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>phpMyAdmin</td>
+                <td>Third party, Free, For Windows</td>
+            </tr>
+            <tr>
+                <td>HeidiSQL</td>
+                <td>Third party, Free, For Windows</td>
+            </tr>
+            <tr>
+                <td>Adminer</td>
+                <td>Third party, Free</td>
+            </tr>
+            <tr>
+                <td>DBEit</td>
+                <td>Third party, Free</td>
+            </tr>
+            <tr>
+                <td>dbForge GUI Tools</td>
+                <td>Third party, Free</td>
+            </tr>
+            <tr>
+                <td>Navicat</td>
+                <td>Third party, Commercial</td>
+            </tr>
+            <tr>
+                <td>Maatkit</td>
+                <td>Third party, Command line, free</td>
+            </tr>
+            <tr>
+                <td>MySQL Sandbox</td>
+                <td>Third party, Commad line, free</td>
+            </tr>
+            <tr>
+                <td>SQLBuddy</td>
+                <td>A free web-based front end, developed in PHP</td>
+            </tr>
+            <tr>
+                <td>SQLyog</td>
+                <td>Commercial, but a free 'community' edition is avaible</td>
+            </tr>
+            <tr>
+                <td>Toad for MySQL</td>
+                <td>Third party, Free, From Quest Software</td>
+            </tr>
+
+
+
+
+        </table>
+
+
+
+
+        <script>
+            $.fn.rowCount = function () {
+                return $('tr', $(this).find('tbody')).length;
+            };
+
+            $.fn.columnCount = function () {
+                return $('th', $(this).find('tbody')).length;
+            };
+
+            var rowNumber = $('#table1').rowCount();
+            var columnNumber = $('#table1').columnCount();
+        </script>
+
+    </body>
+    </html>

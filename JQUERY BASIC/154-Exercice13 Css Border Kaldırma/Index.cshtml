@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+        <title></title>
+        <style>
+          h1{
+              margin:10px 0px;
+              padding:0px 5px;
+              font-size: 2em;
+              border:2px double green;
+          }
+
+        </style>
+       
+    </head>
+    <body>
+
+        <h1 id="myInput">Can Boz</h1>
+        <input type="button" value="Kaldır" onclick="remove_style()" />
+
+
+        <script>
+            function remove_style() {
+                $('#myInput').css("border", "0");
+            }
+        </script>
+
+    </body>
+    </html>

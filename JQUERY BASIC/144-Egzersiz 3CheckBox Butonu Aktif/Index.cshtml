@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+        <input id="accept" type="checkbox"  value="dasa" name="gfsf" /> Kabul ediyorum
+        <br/>
+        <input id="submitbtn" type="submit" disabled name="dsada" value="Gönder" />
+
+        <script>
+            $('#accept').click(function () {
+                if ($('#submitbtn').is(':disabled')) {
+                    $('#submitbtn').removeAttr('disabled');
+                }
+                else {
+                    $('#submitbtn').attr('disabled', '');
+                    //$('#submitbtn').attr('disabled');
+                }
+            });
+        </script>
+
+
+        
+    </body>
+    </html>

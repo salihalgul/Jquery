@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+        <title></title>
+        <style>
+            p span{
+                text-decoration:underline;
+            }
+        </style>
+       
+    </head>
+    <body>
+
+        <p>
+            Jquery kullanarak bir paragraftaki tüm kelimelerin altını çiziniz
+        </p>
+
+        <script>
+            $('p').each(function () {
+                var kelime = $(this).text().split(' ');
+                $(this).empty().html(function () {
+                    for (i = 0; i < kelime.length; i++) {
+                        $(this).append('<span>' + kelime[i] + "</span>"+" ");
+                    }
+                });
+            });
+
+        </script>
+
+    </body>
+    </html>

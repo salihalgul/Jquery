@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+        <title></title>
+        <style>
+          h1{
+              margin:10px 0px;
+              padding:0px 5px;
+              font-size: 2em;
+              border:2px double green;
+          }
+
+        </style>
+       
+    </head>
+    <body>
+
+        <p>Kullanıcının entera basıp basmadığını kontrol et</p>
+
+        <form>
+            <input type="text"  id="hello"/>
+        </form>
+
+        <script>
+            $(document).keypress(function (e) {
+                if (e.which == 13) {
+                    //console.log("Arkadaşım! entera bastın");
+                    alert("Arkadaşım! entera bastın");
+                }
+            });
+        </script>
+
+    </body>
+    </html>

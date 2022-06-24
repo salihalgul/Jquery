@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+        <title></title>
+        <style>
+            .table_style{
+                width:500px;
+                margin:0px auto;
+            }
+            table{
+                width:100%;
+                text-align:center;
+            }
+                table tr td {
+                    width: 50%;
+                    border: 1px solid red;
+                    padding: 10px;
+                }
+            table tr th {
+                border: 1px solid blue;
+                padding:10px;
+                text-align:center;
+            }
+            .zebra{
+                background-color:#ff0066;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="table_style">
+            <table>
+                <tr>
+                    <th>Öğrenci Adı</th>
+                    <th>Matematik Notları</th>
+                </tr>
+                <tr>
+                    <td>Can</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>İbrahim</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>Hakan</td>
+                    <td>76</td>
+                </tr>
+                <tr>
+                    <td>Osman</td>
+                    <td>35</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                //$("tr:odd").addClass("zebra");
+                $("tr:even").addClass("zebra");
+            });
+        </script>
+    </body>
+    </html>
